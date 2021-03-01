@@ -2,10 +2,13 @@
 #
 #   Entropy is a measure of the amount of uncertainty in a system.
 #
-#   Entropy can be written as E = sum( -p[i] * log(p[i]) )
-#   In a perfectly certain system ( p(Xi | Z) = 1 ), the entropy
-#   evaluates to E = sum( -1 * log(1) ), or -1 * 0 = 0. All other
-#   terms are 0 due to there being a zero probability of being in
+#   Entropy can be written as E = sum_i( -p(i) * log(p(i)) )
+#   In a perfectly certain system represented by
+#       p(Xi | Z) = 1, 
+#   the entropy evaluates to
+#       E = sum(-1 * log(1)), or 
+#       -1 * 0 = 0. 
+#   All other terms are 0 due to there being a zero probability of being in
 #   that state.
 #
 #   Each "move" step increases uncertainty due to inexact motion,
